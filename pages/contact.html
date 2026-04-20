@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<!--ReqH1-->
+
+<head>
+    <!--ReqH2-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Videogames Community main page">
+    <meta name="author" content="Álvaro Arróspide Marco">
+    <meta name="keywords" content="videogame, play, player">
+    <title>Contact Us - Videogames Community</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/myJS.js" defer></script>
+    <script src="../js/i18n/i18n.js" defer></script>
+</head>
+
+<body>
+    <!--ReqH3-->
+    <header>
+        <!--ReqH5-->
+        <!--ReqI1 -->
+        <h1 data-i18n="pages.contact.page_title">Contact Us</h1>
+    </header>
+    <main>
+        <!--ReqH4-->
+        <section>
+            <!--ReqH5-->
+            <h2 id="feature" data-i18n="pages.contact.subtitle">Join our Community</h2>
+            <!--ReqH16-->
+            <!--ReqH17-->
+            <!--ReqH19-->
+            <!--ReqH20-->
+            <!-- ReqJ4 -->
+            <form action="mailto:info@bookclub.com?subject=Contact%20Form" onsubmit="return validateForm();"
+                onkeydown="handleKeydown(event)" method="post" novalidate>
+                <fieldset>
+                    <legend data-i18n="forms.legend.info">Contact information</legend>
+
+                    <label for="name" data-i18n="forms.label.name">Name:</label>
+                    <input type="text" id="name" name="name" pattern="[A-Z][a-z]+" required
+                        oninput="updatePreview(); checkValidityState(this)" onmouseover="handleMouseOver(this)"
+                        onmouseout="handleMouseOut(this)">
+
+                    <label for="student-id" data-i18n="forms.label.student_id">Student ID:</label>
+                    <input type="text" id="student-id" name="student-id" pattern="UO[0-9]{6}" required
+                        oninput="updatePreview(); checkValidityState(this)" onmouseover="handleMouseOver(this)"
+                        onmouseout="handleMouseOut(this)">
+
+                    <label for="phone" data-i18n="forms.label.phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="^(\+34|34)?[ ]?6[0-9]{8}$" required
+                        oninput="updatePreview(); checkValidityState(this)" onmouseover="handleMouseOver(this)"
+                        onmouseout="handleMouseOut(this)">
+
+                    <label for="email" data-i18n="forms.label.email">Email:</label>
+                    <input type="email" id="email" name="email" required
+                        oninput="updatePreview(); checkValidityState(this)" onmouseover="handleMouseOver(this)"
+                        onmouseout="handleMouseOut(this)">
+
+                    <label for="password" data-i18n="forms.label.password">Your password:</label>
+                    <input type="password" id="password" name="password" required onmouseover="handleMouseOver(this)"
+                        onmouseout="handleMouseOut(this)">
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="forms.legend.referral">How did you hear about us?</legend>
+
+                    <input type="radio" id="referral" name="referral" value="referral" onchange="updatePreview()">
+                    <label for="referral" data-i18n="forms.label.referral">Referral</label>
+
+                    <input type="radio" id="social" name="referral" value="social" onchange="updatePreview()">
+                    <label for="social" data-i18n="forms.label.social">Social Media</label>
+
+                    <input type="radio" id="search" name="referral" value="search" onchange="updatePreview()">
+                    <label for="search" data-i18n="forms.label.search">Search Engine</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="forms.legend.interests">Interests</legend>
+
+                    <input type="checkbox" id="Fortnite" name="interests" value="Fortnite" onchange="updatePreview()">
+                    <label for="Fortnite">Fortnite</label>
+
+                    <input type="checkbox" id="rocket-league" name="interests" value="rocket-league"
+                        onchange="updatePreview()">
+                    <label for="rocket-league">Rocket-league</label>
+
+                    <input type="checkbox" id="Counter-Strike-2" name="interests" value="Counter-Strike-2"
+                        onchange="updatePreview()">
+                    <label for="Counter-Strike-2">Counter-Strike-2</label>
+
+                    <input type="checkbox" id="Rainbow-six-siege-x" name="interests" value="Rainbow-six-siege-x"
+                        onchange="updatePreview()">
+                    <label for="Rainbow-six-siege-x">Rainbow-six-siege-x</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="forms.legend.tournament">Tournament</legend>
+
+                    <label for="tournament" data-i18n="forms.label.signup">Sign up for tournament:</label>
+                    <input type="text" id="tournament" name="tournament" oninput="updatePreview()"
+                        onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="forms.legend.propose">Propose a new videogame</legend>
+
+                    <label for="videogame" data-i18n="forms.label.videogame">Videogame:</label>
+                    <input type="text" id="videogame" name="videogame" oninput="updatePreview()"
+                        onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+
+                    <label for="category" data-i18n="forms.label.category">Category:</label>
+                    <select id="category" name="category" onchange="updatePreview()" onmouseover="handleMouseOver(this)"
+                        onmouseout="handleMouseOut(this)">
+
+                        <optgroup label="Shooter">
+                            <option value="1v1" data-i18n="forms.category.1v1">1v1</option>
+                            <option value="open-world" data-i18n="forms.category.open_world">Open World</option>
+                        </optgroup>
+
+                        <optgroup label="Survival">
+                            <option value="Dinosaurs" data-i18n="forms.category.dinosaurs">Dinosaurs</option>
+                            <option value="Zombies" data-i18n="forms.category.zombies">Zombies</option>
+                        </optgroup>
+
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend data-i18n="forms.legend.message">Your message</legend>
+
+                    <label for="message" data-i18n="forms.label.message">Message:</label>
+                    <textarea id="message" name="message" required oninput="updatePreview()"
+                        onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)"></textarea>
+                </fieldset>
+
+                <!-- ReqJ5 -->
+                <!-- Error container -->
+                <div id="error-box" class="error-box"></div>
+
+                <!--ReqH18-->
+                <button class="btn" id="submit-btn" type="submit" data-i18n="forms.btn.send">Send Message</button>
+                <button class="btn" id="reset-btn" type="reset" data-i18n="forms.btn.clear">Clear form </button>
+            </form>
+        </section>
+
+        <!-- ReqJ2 -->
+        <!-- Preview container -->
+        <section id="preview">
+            <h2 data-i18n="pages.contact.preview_title">Live Preview</h2>
+            <div id="preview-content">
+                <p data-i18n="pages.contact.preview_text">Form preview will appear here.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!--ReqH10-->
+        <!--ReqH12-->
+        <!--ReqH13-->
+        <figure>
+            <a href="../index.html">
+                <img src="../resources/images/videogames.png" alt="Videogames photo" title="Videogames" width="400"
+                    height="200" data-i18n-alt="footer.logoAlt" data-i18n-title="footer.logoTitle">
+            </a>
+            <figcaption data-i18n="site.footer">&copy; 2026 Videogames Community. All rights reserved.</figcaption>
+        </figure>
+    </footer>
+</body>
+
+</html>

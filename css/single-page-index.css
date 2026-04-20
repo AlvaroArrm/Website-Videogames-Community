@@ -1,0 +1,153 @@
+/* ReqS5 */
+main {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ReqS6 */
+section::first-letter {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* ReqS9 */
+#feature {
+  background-color: #1a252f;
+}
+
+/* ReqS10 */
+section>p {
+  color: #34495e;
+  font-size: 1.05rem;
+}
+
+/* ReqS11 */
+section p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+/* ReqS12 */
+h2+p {
+  font-weight: 600;
+  color: #e74c3c;
+  font-size: 1.1rem;
+}
+
+/* ReqS13 */
+nav {
+  background-color: #1a252f;
+}
+
+/* ReqS13 */
+nav ul {
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* ReqS13 */
+nav li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+/* ReqS13 */
+nav a {
+  display: inline-block;
+  padding: 0.8em 1.2em;
+  margin: 0.2em;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #3498db;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ReqS14 */
+nav a:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.games {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  line-height: 1.8em;
+  margin-left: 0;
+  padding: 1.5em;
+  background-color: #f9fbfc;
+  border-radius: 12px;
+  border: 1px solid #e0e6ed;
+}
+
+/* ReqS15*/
+.games li {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #e0e6ed;
+  transition: all 0.3s ease;
+}
+
+.games li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.games li:hover {
+  background-color: #f4f6f9;
+  border-radius: 8px;
+  padding-left: 1em;
+}
+
+.games a {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.games img {
+  vertical-align: middle;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-right: 1.5em;
+  margin-left: 1em;
+}
+
+.games a:hover img {
+  transform: scale(1.05);
+}
+
+.games h3 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.games a:hover h3 {
+  color: #3498db;
+}
+
+section {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
