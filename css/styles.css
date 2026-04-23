@@ -31,6 +31,7 @@ h2 {
 }
 
 /* ReqC7 */
+/* Main descriptions styling */
 .desc {
   margin: 1.5rem 0;
   padding: 1.5rem;
@@ -43,6 +44,7 @@ h2 {
 }
 
 /* ReqC8 */
+/* Main h1 styling */
 #feature {
   background-color: #1a252f;
   color: #ecf0f1;
@@ -53,6 +55,7 @@ h2 {
 }
 
 /* ReqS16 */
+/* Tournaments table styling */
 table {
   border-collapse: collapse;
   width: 65vw;
@@ -65,6 +68,7 @@ table {
 }
 
 /* ReqC17 */
+/* Table headers and cells styling */
 th,
 td {
   border: 1px solid #e0e6ed;
@@ -91,6 +95,7 @@ tbody tr:hover td {
 }
 
 /* ReqC18 */
+/* Form styling */
 form {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 700px;
